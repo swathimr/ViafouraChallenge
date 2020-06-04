@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  springboot-docker-compose-app-container:
+    image: viafoura-challenge:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/viafoura-challenge
+    ports:
+      - "8080:8080"
