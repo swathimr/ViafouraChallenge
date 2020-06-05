@@ -77,7 +77,6 @@ public class AnagramService {
   public void permute(String str, int left, List<String> result) {
     if (left == str.length() - 1) {
       result.add(str);
-//      return;
     } else {
       for (int i = left; i <= str.length() - 1; i++) {
         str = swap(left, i, str);
